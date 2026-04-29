@@ -1,217 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forfra Solutions</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-body{background:#071426;color:#fff}
-
-header{
-position:fixed;
-top:0;
-width:100%;
-padding:20px 60px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-background:rgba(7,20,38,0.7);
-backdrop-filter:blur(12px);
-z-index:1000
-}
-
-header h1{color:#4fd1ff;font-weight:700}
-
-nav a{
-color:#cbd5e1;
-margin-left:30px;
-text-decoration:none;
-position:relative
-}
-
-nav a::after{
-content:'';
-position:absolute;
-left:0;
-bottom:-5px;
-width:0;
-height:2px;
-background:#4fd1ff;
-transition:0.3s
-}
-
-nav a:hover::after{width:100%}
-
-.hero{
-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:0 20px
-}
-
-.hero h2{
-font-size:3.5rem;
-max-width:800px;
-opacity:0;
-transform:translateY(40px);
-animation:fadeUp 1s forwards
-}
-
-.hero p{
-margin:20px 0;
-color:#94a3b8;
-max-width:600px;
-opacity:0;
-animation:fadeUp 1s 0.3s forwards
-}
-
-.btn{
-padding:14px 30px;
-border:2px solid #4fd1ff;
-color:#4fd1ff;
-text-decoration:none;
-border-radius:8px;
-transition:0.3s;
-opacity:0;
-animation:fadeUp 1s 0.6s forwards
-}
-
-.btn:hover{
-background:#4fd1ff;
-color:#071426;
-transform:scale(1.08)
-}
-
-.section{padding:100px 60px;text-align:center}
-
-.services{display:flex;gap:30px;justify-content:center;flex-wrap:wrap}
-
-.card{
-background:linear-gradient(145deg,#0a1f3a,#08172d);
-padding:30px;
-border-radius:20px;
-width:300px;
-transition:0.4s;
-opacity:0;
-transform:translateY(50px)
-}
-
-.card:hover{
-transform:translateY(-12px) scale(1.05);
-box-shadow:0 20px 50px rgba(0,0,0,0.7)
-}
-
-.pricing{
-display:flex;gap:30px;justify-content:center;flex-wrap:wrap;margin-top:40px
-}
-
-.price-card{
-background:#0a1f3a;
-padding:40px;
-border-radius:20px;
-width:300px;
-transition:0.3s
-}
-
-.price-card:hover{transform:scale(1.07)}
-
-footer{
-background:#020c1b;
-padding:30px;
-text-align:center;
-color:#94a3b8
-}
-
-@keyframes fadeUp{
-to{opacity:1;transform:translateY(0)}
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forfra Solutions Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-<h1>Forfra Solutions</h1>
-<nav>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#pricing">Pricing</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <header class="navbar">
 
-<section class="hero">
-<h2>We Build High-Converting Digital Experiences</h2>
-<p>Premium web, app & growth solutions designed for businesses that aim high.</p>
-<a href="#contact" class="btn">Start Project</a>
+    <div class="logo">
+      <img src="logo.png" alt="logo">
+      <span>FORFRA SOLUTIONS</span>
+    </div>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Services ▾</li>
+        <li>Career ▾</li>
+        <li>About Us</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1>FORFRA SOLUTIONS</h1>
+      <h2>
+        <span class="blue">FORENSIC</span>
+        <span class="light">FRAME</span>
+      </h2>
+      <p>FROM THE BEGINNING</p>
+    </div>
+
+    <div class="scroll-down">⌄</div>
+  </section>
+  <!-- =========================================================================================== -->
+
+<div class="header1"><h1>Empowering Futures,<br>Securing Digital Frontiers</h1></div>
+
+<section id="home" class="hero fade">
+  <div class="hero-text">
+    <!-- <small>WELCOME TO FORFRA SOLUTIONS</small> -->
+    
+    <p>We provide smart, technology-driven forensic, investigative and risk management solutions.</p>
+
+  
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+  </div>
+</section>
+<!-- ============================== -->
+ <div class="header1"><h1>Detect.Protect.Evolve.</h1></div>
+
+<section id="home" class="hero fade">
+  <div class="hero-text">
+    <!-- <small>WELCOME TO FORFRA SOLUTIONS</small> -->
+    <h1>About Us</h1>
+    <p>From digital forensics to corporate risk management, we help organizations uncover truth, strengthen security and move forward with confidence.</p>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+  </div>
+</section>
+<!-- ============================= -->
+ <div class="header1"></div>
+
+<section id="home" class="hero fade">
+  <div class="hero-text">
+    <!-- <small>WELCOME TO FORFRA SOLUTIONS</small> -->
+    <h1>Career Opportunity</h1>
+    <p>Embrace challenging opportunities, advance your skills and make a meaningful impact in the real world.</p>
+
+    <div class="buttons">
+      <button class="primary" onclick="scrollToSection('services')">Explore Services</button>
+      <button class="secondary" onclick="scrollToSection('contact')">Contact Us</button>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+  </div>
+</section>
+<!-- ============================== -->
+ <div class="header1"></div>
+
+<section id="home" class="hero fade">
+  <div class="hero-text">
+    <!-- <small>WELCOME TO FORFRA SOLUTIONS</small> -->
+    <h1>Instant Help, Expert Guidance 
+    </h1><br><h1> — Right Here </h1>
+    <!-- <p>We provide smart, technology-driven forensic, investigative and risk management solutions.</p> -->
+
+   
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789">
+  </div>
+</section>
+<!-- ================================================= -->
+
+
+
+
+
+<!-- ======================= -->
+    <h1>      Our Services</h1>
+<section class="features fade">
+
+  <div class="feature"><h4>Digital Forensic</h4></div>
+  <div class="feature"><h4>Data Security</h4></div>
+  <div class="feature"><h4>Insurance Forensics</h4></div>
+  <div class="feature"><h4>Consultantion</h4></div>
+  
+</section> 
+
+<!-- =================== -->
+ <section id="services" class="services fade">
+  <!-- <h2>Our Services</h2> -->
+  <div class="cards">
+    <div class="card"><h3>Career </h3></div>
+    <div class="card"><h3>About Us</h3></div>
+    <div class="card"><h3>Contact Us </h3></div>
+   
+  </div>
 </section>
 
-<section id="services" class="section">
-<h2>Our Expertise</h2>
-<div class="services">
-<div class="card"><h3>Web Development</h3><p>Conversion-focused, fast & scalable websites.</p></div>
-<div class="card"><h3>App Development</h3><p>Modern apps built for performance & growth.</p></div>
-<div class="card"><h3>Brand Strategy</h3><p>Positioning brands for premium market dominance.</p></div>
-</div>
-</section>
 
-<section id="pricing" class="section">
-<h2>Premium Packages</h2>
-<div class="pricing">
-<div class="price-card">
-<h3>Starter</h3>
-<p>₹25,000+</p>
-<p>Basic Website</p>
-</div>
-<div class="price-card">
-<h3>Growth</h3>
-<p>₹75,000+</p>
-<p>Advanced Business Site</p>
-</div>
-<div class="price-card">
-<h3>Elite</h3>
-<p>₹2L+</p>
-<p>Full Digital Solution</p>
-</div>
-</div>
-</section>
-
-<section id="contact" class="section">
-<h2>Contact Us</h2>
-<form onsubmit="submitForm(event)">
-<input type="text" placeholder="Your Name" required style="padding:12px;margin:10px;width:250px;border-radius:6px;border:none"><br>
-<input type="email" placeholder="Email" required style="padding:12px;margin:10px;width:250px;border-radius:6px;border:none"><br>
-<button class="btn">Send Inquiry</button>
-</form>
-</section>
-
-<footer>
-<p>© 2026 Forfra Solutions. All rights reserved.</p>
-</footer>
 
 <script>
-function submitForm(e){
-e.preventDefault();
-alert('We will contact you shortly.');
+function scrollToSection(id){
+  document.getElementById(id).scrollIntoView({behavior:'smooth'});
 }
 
-const elements=document.querySelectorAll('.card, .price-card');
-const observer=new IntersectionObserver(entries=>{
-entries.forEach(entry=>{
-if(entry.isIntersecting){
-entry.target.style.opacity=1;
-entry.target.style.transform='translateY(0)';
-}
-})
-},{threshold:0.2});
+// fade animation
+const faders = document.querySelectorAll('.fade');
+window.addEventListener('scroll', () => {
+  faders.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+      el.classList.add('show');
+    }
+  });
+});
 
-elements.forEach(el=>observer.observe(el));
+// cursor glow
+const glow = document.getElementById('glow');
+document.addEventListener('mousemove', (e) => {
+  glow.style.left = e.clientX + 'px';
+  glow.style.top = e.clientY + 'px';
+});
 </script>
 
 </body>
